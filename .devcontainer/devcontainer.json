@@ -1,0 +1,11 @@
+{
+  "name": "Timelapse Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    }
+  },
+  "forwardPorts": [3000, 8080, 19006],
+  "postCreateCommand": "npm install --prefix backend && npm install --prefix frontend/web"
+}
